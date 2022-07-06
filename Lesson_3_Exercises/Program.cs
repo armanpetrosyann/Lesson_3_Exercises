@@ -88,6 +88,35 @@ namespace Lesson_3_Exercises
                 Console.WriteLine(false);
             }
 
+
+            // if at two of the given numbers is equal to two,
+            // it will return true otherwise false
+
+            const double fixTwoNumber = 2;
+
+            Console.Write("a: ");
+            double n1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            double n2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("c: ");
+            double n3 = Convert.ToDouble(Console.ReadLine());
+
+            if (n1 == fixTwoNumber && n2 == fixTwoNumber && n3 != fixTwoNumber)
+            {
+                Console.WriteLine(true);
+            }
+            else if (n1 != fixTwoNumber && n2 == fixTwoNumber && n3 == fixTwoNumber)
+            {
+                Console.WriteLine(true);
+            } else if (n1 == fixTwoNumber && n2 != fixTwoNumber && n3 == fixTwoNumber)
+            {
+                Console.WriteLine(true);
+            } else
+            {
+                Console.WriteLine(false);
+            }
         }
     }
 }
