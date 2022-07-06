@@ -30,7 +30,8 @@ namespace Lesson_3_Exercises
             else if (thirdNumber > firstNumber && thirdNumber > secondNumber)
             {
                 Console.WriteLine($"{thirdNumber} is big than {firstNumber} and {secondNumber}");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Something gone wrong!");
             }
@@ -58,9 +59,33 @@ namespace Lesson_3_Exercises
             else if (numberThree < numberOne && numberThree < numberTwo)
             {
                 Console.WriteLine($"{numberThree} is small than {numberOne} and {numberTwo}");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Something gone wrong!");
+            }
+
+            // if at least one of the given numbers is equal to one,
+            // it will return true otherwise false
+
+            const double fixNumber = 1;
+
+            Console.Write("a: ");
+            double numOne = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            double numTwo = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("c: ");
+            double numThree = Convert.ToDouble(Console.ReadLine());
+
+            if (numOne == fixNumber || numTwo == fixNumber || numThree == fixNumber)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
             }
 
         }
