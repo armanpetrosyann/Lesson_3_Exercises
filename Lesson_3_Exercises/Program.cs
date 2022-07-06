@@ -7,7 +7,6 @@ namespace Lesson_3_Exercises
         static void Main(string[] args)
         {
             // Different numbers a, b, c are given. Make a block diagram and a program which are
-
             // 21.Will generate the value of the larger of the given numbers
 
             Console.Write("a: ");
@@ -110,15 +109,47 @@ namespace Lesson_3_Exercises
             else if (n1 != fixTwoNumber && n2 == fixTwoNumber && n3 == fixTwoNumber)
             {
                 Console.WriteLine(true);
-            } else if (n1 == fixTwoNumber && n2 != fixTwoNumber && n3 == fixTwoNumber)
+            }
+            else if (n1 == fixTwoNumber && n2 != fixTwoNumber && n3 == fixTwoNumber)
             {
                 Console.WriteLine(true);
-            } else
+            }
+            else
             {
                 Console.WriteLine(false);
             }
 
-            // 25.
+            // 25.if it is possible to construct a triangle with segments of
+            // such length, then 'y=1' will be drawn, otherwise 'y=2'
+
+            Console.Write("a: ");
+            double sideA = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            double sideB = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("c: ");
+            double sideC = Convert.ToDouble(Console.ReadLine());
+
+            if (sideA > 3 && sideB > 3 && sideC < 3)
+            {
+                Console.WriteLine("'y=1'");
+            }
+            else if (sideA < 3 && sideB > 3 && sideC > 3)
+            {
+                Console.WriteLine("'y=1'");
+            }
+            else if (sideA > 3 && sideB < 3 && sideC > 3)
+            {
+                Console.WriteLine("'y=1'");
+            }
+            else
+            {
+                Console.WriteLine("'y=2'");
+            }
+
+
+
         }
     }
 }
