@@ -148,7 +148,34 @@ namespace Lesson_3_Exercises
                 Console.WriteLine("'y=2'");
             }
 
+            // 26.Will produce one if at least one of
+            // the given numbers is even, otherwise 
 
+            Console.Write("a: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("c: ");
+            double num3 = Convert.ToDouble(Console.ReadLine());
+
+            if (num1 % 2 == 0)
+            {
+                Console.WriteLine(1);
+            }
+            else if (num2 % 2 == 0)
+            {
+                Console.WriteLine(1);
+            }
+            else if (num3 % 2 == 0)
+            {
+                Console.WriteLine(1);
+            }
+            else
+            {
+                Console.WriteLine(2);
+            }
 
         }
     }
