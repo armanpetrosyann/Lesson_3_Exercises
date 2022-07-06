@@ -8,7 +8,7 @@ namespace Lesson_3_Exercises
         {
             // Different numbers a, b, c are given. Make a block diagram and a program which are
 
-            // Will generate the value of the larger of the given numbers
+            // 21.Will generate the value of the larger of the given numbers
 
             Console.Write("a: ");
             double firstNumber = Convert.ToDouble(Console.ReadLine());
@@ -37,7 +37,7 @@ namespace Lesson_3_Exercises
             }
 
 
-            // Will generate the value of the smaller of the given numbers
+            // 22.Will generate the value of the smaller of the given numbers
 
             Console.Write("a: ");
             double numberOne = Convert.ToDouble(Console.ReadLine());
@@ -66,7 +66,7 @@ namespace Lesson_3_Exercises
             }
 
             // if at least one of the given numbers is equal to one,
-            // it will return true otherwise false
+            // 23.it will return true otherwise false
 
             const double fixNumber = 1;
 
@@ -90,7 +90,7 @@ namespace Lesson_3_Exercises
 
 
             // if at two of the given numbers is equal to two,
-            // it will return true otherwise false
+            // 24.it will return true otherwise false
 
             const double fixTwoNumber = 2;
 
@@ -117,6 +117,8 @@ namespace Lesson_3_Exercises
             {
                 Console.WriteLine(false);
             }
+
+            // 25.
         }
     }
 }
