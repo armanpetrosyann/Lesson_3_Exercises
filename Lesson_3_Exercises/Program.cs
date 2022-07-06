@@ -19,17 +19,48 @@ namespace Lesson_3_Exercises
             Console.Write("c: ");
             double thirdNumber = Convert.ToDouble(Console.ReadLine());
 
-            if (firstNumber > secondNumber || firstNumber > thirdNumber)
+            if (firstNumber > secondNumber && firstNumber > thirdNumber)
             {
                 Console.WriteLine($"{firstNumber} is big than {secondNumber} and {thirdNumber}");
             }
-            else if (secondNumber > firstNumber || secondNumber > thirdNumber)
+            else if (secondNumber > firstNumber && secondNumber > thirdNumber)
             {
                 Console.WriteLine($"{secondNumber} is big than {firstNumber} and {thirdNumber}");
             }
-            else if (thirdNumber > firstNumber || thirdNumber > secondNumber)
+            else if (thirdNumber > firstNumber && thirdNumber > secondNumber)
             {
                 Console.WriteLine($"{thirdNumber} is big than {firstNumber} and {secondNumber}");
+            } else
+            {
+                Console.WriteLine("Something gone wrong!");
+            }
+
+
+            // Will generate the value of the smaller of the given numbers
+
+            Console.Write("a: ");
+            double numberOne = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            double numberTwo = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("c: ");
+            double numberThree = Convert.ToDouble(Console.ReadLine());
+
+            if (numberOne < numberTwo && numberOne < numberThree)
+            {
+                Console.WriteLine($"{numberOne} is small than {numberTwo} and {numberThree}");
+            }
+            else if (numberTwo < numberOne && numberTwo < numberThree)
+            {
+                Console.WriteLine($"{numberTwo} is small than {numberOne}  and  {numberThree}");
+            }
+            else if (numberThree < numberOne && numberThree < numberTwo)
+            {
+                Console.WriteLine($"{numberThree} is small than {numberOne} and {numberTwo}");
+            } else
+            {
+                Console.WriteLine("Something gone wrong!");
             }
 
         }
